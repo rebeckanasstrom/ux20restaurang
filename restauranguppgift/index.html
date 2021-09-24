@@ -1,3 +1,4 @@
+<!--Gruppuppgift UX20 Programmering för UX: Sherry, Rebecka T & Rebecka N-->
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -8,46 +9,58 @@
     <link href="style.css" rel="stylesheet">
     <title>Lilla Ego - Hem</title>
 </head>
-<header>
-    <nav>
-    <a href="index.html"><img src="images/logo_black.png" alt="Logo med texten Lilla Ego"></a>
-    <a href="index.html">Hem</a>
-        <a href="meny.html">Meny</a>
-    </nav>
-</header>
-
 <body>
-    <img src="images/restaurant.jpg" alt="Bild på en restaurang" class="fullscreenimg">
-    <h1>Välkommen till restaurang Lilla Ego</h1>
-    <p>På kvarterskrogen Lilla Ego i Vasastan kör de två prisbelönta kockarna Tom Sjöstedt och Daniel Räms sin egen grej. Här behöver du inte boka bord, istället är restaurangen öppen och tillgänglig för alla som bara vill droppa in. Köketrt är öppet, borden är hemsnickrade, loppisfynd skapar stämning tillsammans med industrilamporna i taket.
-        Menyn, den består av en basmeny med några för- och huvudrätter plus dessert, samt även varierande rätter som anpassas efter tillgången på råvaror. </p>
-    <p>Restaurangen är är prisad och rosad och vi ställer oss i hyllningskören. I en enkel lokal skapas trivsel och stor smakglädje till rimligt pris. Fullträff är ordet som bäst beskriver Lilla ego.
-        Lilla Ego är en av de restauranger som Guide Michelin tagit med i sin lista.</p><br>
-    <img src="images/plates.jpg" alt="Person håller i två tallrikar med mat" class="fullscreenimg">
-    <hr><br>
-    <form action="index.html">
-        <label for="firstname">Förnamn:</label><br>
-        <input type="text" id="fname" name="firstname" placeholder="Förnamn"><br><br>
-        <label for="lastname">Efternamn:</label><br>
-        <input type="text" id="lastname" name="lastname" placeholder="Efternamn"><br><br>
-        <label for="email">E-postadress:</label><br>
-        <input name="email" type="email" id="email" placeholder="Din e-postadress"><br><br>
-        <label for="date">Välj datum:</label><br>
-        <input name="date" type="date" id="date" placeholder="Select date" min="2021-10-22" max="2022-10-22"><br><br>
-        <label for="number">Antal personer:</label><br>
-        <input name="number" type="number" id="number" placeholder="Antal" min="1" max="8"><br><br>
-        <input type="submit" value="Submit" onclick="alert('Tack för din bokning!')">
-      </form> 
-      <br><hr>
-</body>
-<footer>
-    <p>LILLA EGO<br>
-        Västmannagatan 69<br>
-        113 26 Stockholm<br>
-        Öppettider Tis-Lör, 16-sent</p>
-    <p>Telefonnummer 08-27 44 55<br>
-        Telefontid 14-16<br>
-        Mailadress info@lillaego.com</p>
-</footer>
+    <div class="parallax">
+    <header>
+        <nav>
+        <a href="index.html"><img src="images/logo_black.png" alt="Logo med texten Lilla Ego"></a>
+        <a href="index.html">Hem</a>
+            <a href="meny.html">Meny</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="columns">
+            <div class="col"><img src="images/restaurant.jpg" alt="Bild på en restaurang"></div>
+            <div class="col"><h1>Välkommen till restaurang Lilla Ego</h1>
+            <p>På kvarterskrogen Lilla Ego i Vasastan kör de två prisbelönta kockarna Tom Sjöstedt och Daniel Räms sin egen grej. Här behöver du inte boka bord, istället är restaurangen öppen och tillgänglig för alla som bara vill droppa in. Köket är öppet, borden är hemsnickrade, loppisfynd skapar stämning tillsammans med industrilamporna i taket.<br><br><!--</p></div>-->
+            Menyn, den består av en basmeny med några för- och huvudrätter plus dessert, samt även varierande rätter som anpassas efter tillgången på råvaror.Restaurangen är är prisad och rosad och vi ställer oss i hyllningskören. I en enkel lokal skapas trivsel och stor smakglädje till rimligt pris. Fullträff är ordet som bäst beskriver Lilla ego.
+                Lilla Ego är en av de restauranger som Guide Michelin tagit med i sin lista.</p></div>
+                </section>
+
+            <section class="columns">
+                <div class="col"><h2>Boka bord</h2>
+                    <p>På kvarterskrogen Lilla Ego kan du komma och äta. Boka gärna bord här genom formuläret på sidan. Observera att vi släpper alla bord tidigast en månad innan. Fyll i dina uppgifter i formuläret så skickar vi en bekräftelse.</p>
+                <img src="images/lillaego-fonster.jpeg" alt="Bild på lokalen genom ett fönster med flera fönsterrutor."></div>
+                <div class="col">
+                    <form action="index.html"></form>
+                        <label for="firstname">Förnamn:</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="Förnamn"><br><br>
+                        <label for="lastname">Efternamn:</label><br>
+                        <input type="text" id="lastname" name="lastname" placeholder="Efternamn"><br><br>
+                        <label for="email">E-postadress:</label><br>
+                        <input name="email" type="email" id="email" placeholder="Din e-postadress"><br><br>
+                        <label for="date">Välj datum:</label><br>
+                        <input name="date" type="date" id="date" placeholder="Select date" min="2021-10-22" max="2022-10-22"><br><br>
+                        <label for="number">Antal personer:</label><br>
+                        <input name="number" type="number" id="number" placeholder="Antal" min="1" max="8"><br><br>
+                        <input type="submit" value="Submit" onclick="alert('Tack för din bokning!')">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="columns2">
+        <div class="col2">
+        <p><b>LILLA EGO</b><br>
+            Västmannagatan 69<br>
+            113 26 Stockholm<br>
+            Öppettider Tis-Lör, 16-sent</p></div>
+            <div class="col2">
+            <p>Telefonnummer 08-27 44 55<br>
+            Telefontid 14-16<br>
+            Mailadress <a href="mailto:info@lillaego.com">info@lillaego.com</a></p></div>
+    </footer>
+    </div>
+    </body>
 
 </html>

@@ -1,52 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@600&display=swap');
+/*Gruppuppgift UX20 Programmering för UX: Sherry, Rebecka T & Rebecka N*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&family=Raleway:wght@600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: #F8F6F1;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 100%;
+body, html {
+    height: 100%;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Raleway', sans-serif;
+body {
+    background-color: #dbd1c3;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    color: white;
 }
 
 header {
-    width: 120%;
-    padding: 20px;
-    background-color: yellow;
+    background-color: #F8F6F1;
+    box-shadow: 0px 8px 20px rgb(44, 44, 44);
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    margin: 0% 2%;
 }
 
 nav a {
     display: inline;
-    padding: 20px;
+    padding: 15px 30px;
     font-size: 150%;
     text-decoration: none;
+    font-weight: bolder;
+    color: black;
 }
 
 nav a:hover {
     text-decoration: underline overline;
 }
 
-.fullscreenimg {
-    width: 800px;
+nav img {
+    height: 40px;
 }
 
-#number {
-    width: 50px;
+/*Columns for index page*/
+.columns {
+    display: flex;
+    align-items: stretch;
+    padding: 2%;
+}
+
+.col {
+    width: 90%;
+    margin: 0% 2%;
+    padding: 5%;
+    background-color: rgba(41, 41, 41, 0.82);
+}
+
+/*Columns for menu page*/
+.columns2 {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    color: black;
+}
+
+.col2 {
+    width: 100%;
+    margin: 0% 2%;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    line-height: 150%;
+}
+
+h1, h2 {
+    margin: 2% 0%;
+}
+
+input {
+    width: 95%;
+    height: 30px;
+    margin: 10px 0px;
 }
 
 footer {
-    position:initial;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    background-color:#0E5430;
-    color:#F8F6F1;
-    font-size: 80%;
+    background-color: #F8F6F1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/brickwall2.png");
+  
+    /* Full height */
+    height: auto; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  li {
+      line-height: 400%;
+      list-style: none;
+  }
+
+  #menuHeading {
+      text-align: center;
+      padding: 2%;
+      color: black;
+  }
+
+@media only screen and (max-width: 780px) {
+    .columns {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .columns2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .col {
+        margin: 2% 0%;
+    }
+
+    .col2 {
+        margin: 2% 0%;
+    }
+
+    li {
+        line-height: 200%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    p, li {
+        font-size: 130%;
+    }
 }
